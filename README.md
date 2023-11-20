@@ -14,7 +14,7 @@ Rory Eiffe
 1. Java
 1. JDBC
 1. H2
-1. 
+1. HTTP Server
 
 ### Time
 30 Minutes
@@ -36,7 +36,6 @@ Rory Eiffe
 2. The application is free from obvious security flaws such as
     1. SQL Injection
     1. Sensitive data, such as passwords, being exposed in response body
-    1. 
 
 
 ### Stretch Goals 

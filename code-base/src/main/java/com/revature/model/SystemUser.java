@@ -2,8 +2,6 @@ package com.revature.model;
 
 import java.util.Objects;
 
-// create a fully encapsulated User class with the following fields:
-// id, username, password, firstName, lastName, email, role
 public class SystemUser {
     private int id;
     private String username;
