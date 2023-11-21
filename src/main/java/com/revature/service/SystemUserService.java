@@ -2,6 +2,7 @@ package com.revature.service;
 
 import com.revature.model.SystemUser;
 import com.revature.repository.SystemUserRepository;
+import com.revature.util.PasswordHelper;
 
 public class SystemUserService {
     private SystemUserRepository systemUserRepository;
@@ -17,6 +18,10 @@ public class SystemUserService {
      * @return true if the registration is successful, false otherwise
      */
     public boolean register(SystemUser user) {
+        // check password:
+        if (!PasswordHelper.isPasswordValid(user.getPassword())) {
+            return false;
+        }
         return systemUserRepository.register(user);
     }
 

@@ -22,6 +22,7 @@ public class ConnectionFactory {
 		try {
 			Class.forName("org.h2.Driver");
 			conn = DriverManager.getConnection("jdbc:h2:mem:test;INIT=runscript from 'src/main/resources/create.sql'", "sa", "");
+
 		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
