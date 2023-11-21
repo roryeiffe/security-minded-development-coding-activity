@@ -6,7 +6,7 @@ Rory Eiffe
 
 ### Prerequisites
 
-1. Basic Understanding of a Gen AI tool
+1. Basic Understanding of a Gen AI tool (Codeium, CoPilot, etc.)
 2. Basic Security Knowledge
 3. Basic Java/JDBC Knowledge
 
@@ -36,6 +36,7 @@ Rory Eiffe
 2. The application is free from obvious security flaws such as
     1. SQL Injection
     1. Sensitive data, such as passwords, being exposed in response body
+    1. Weak passwords, such as short passwords or passwords with no numbers/symbols
 
 
 ### Stretch Goals 
@@ -43,3 +44,6 @@ Rory Eiffe
 1. Implement hashing for passwords so plain-text passwords are not stored in database.
 
 ### Discussion & FAQ
+1. What changes did you need to make to the generated code to ensure the application is secure?
+1. What security features did the AI generate on its own?
+1. In general, how successful was the AI tool at generating secure code?

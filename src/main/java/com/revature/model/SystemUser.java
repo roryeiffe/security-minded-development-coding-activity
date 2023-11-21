@@ -23,6 +23,7 @@ public class SystemUser {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.role = role;
     }
 
     public SystemUser(String username, String password, String firstName, String lastName, String email, String role) {
