@@ -18,6 +18,7 @@ public class SystemUserRepository {
      *
      * @param user the system user to register
      * @return true if the user is registered successfully, false otherwise
+     * @throws SQLException if an error occurs while registering the user
      */
     public boolean register(SystemUser user) {
         // first check if username or email already exist:
@@ -64,7 +65,7 @@ public class SystemUserRepository {
      * @param username The username of the user.
      * @param password The password of the user.
      * @return The authenticated user object.
-     * @throws UnsupportedOperationException Thrown when the login operation is not supported.
+     * @throws RuntimeException if an error occurs while authenticating the user.
      */
     public SystemUser login(String username, String password) {
         String sql = "SELECT * FROM users WHERE username = ? AND password = ?";
