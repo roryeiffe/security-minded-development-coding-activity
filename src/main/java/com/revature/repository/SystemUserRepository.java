@@ -19,6 +19,7 @@ public class SystemUserRepository {
      *
      * @param user the system user to register
      * @return true if the user is registered successfully, false otherwise
+     * @throws UnsupportedOperationException Thrown when the login operation is not supported.
      */
     public boolean register(SystemUser user) {
         throw new UnsupportedOperationException();
